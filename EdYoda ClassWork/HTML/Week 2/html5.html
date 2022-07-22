@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 5</title>
+    <style>
+        nav {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        nav>a:hover {
+            color: red;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="https://ganesh-patil-portfolio.vercel.app/">Resume</a>
+        <a href="https://github.com/Ganesh28Patil">Git</a>
+        <a href="https://www.linkedin.com/in/ganesh-patil-716b191b8/">LinkedIn</a>
+    </nav>
+    <header>
+        <h1>I am Ganesh Patil</h1>
+    </header>
+    <main>
+        <section>
+            <h6>About Me</h6>
+            <p></p>
+        </section>
+        <!-- label input datalist -->
+        <section>
+            <h4>Please Specify : </h4>
+            <label for="type-of-user">Type of user : </label>
+            <input list="users" name="user-type" id="type-of-user">
+            <datalist id="users">
+                <option value="HR">
+                <option value="CEO">
+                <option value="Er">
+                <option value="Dr">
+            </datalist>
+        </section>
+        <section>
+            <h3>My Projects</h3>
+            <ul>
+                <li>Portfolio</li>
+                <li>Ecomerece website</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <a href="">LinkedIn</a>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                </li>
+            </ul>
+        </section>
+        <!-- details summary  -->
+        <section>
+            <h3>My Protfolio</h3>
+            <details>
+                <summary>Protfolio WebSite</summary>
+                <p>This is my portfoilio <a href="#">www.portfolio.com</a> website</p>
+            </details>
+            <details>
+                <summary>Ecomerece Website</summary>
+                <p>This is my Ecomerece <a href="#">www.ecomerece.com</a> website</p>
+            </details>
+        </section>
+    </main>
+    <aside>
+        <section>
+            <p>I am in aside tag</p>
+        </section>
+    </aside>
+    <footer>
+        <p>CopyRight @ Ganesh Patil, 2022</p>
+    </footer>
+
+</body>
+
+</html>
