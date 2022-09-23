@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object basic</h1>
+
+</body>
+<script>
+    var library = [
+        {
+            title: 'The Road Ahead',
+            author: 'Bill Gates',
+            readingStatus: true
+        },
+        {
+            title: 'Steve Jobs',
+            author: 'Walter Isaacson',
+            readingStatus: true
+        },
+        {
+            title: 'Mockingjay: The Final Book of The Hunger Games',
+            author: 'Suzanne Collins',
+            readingStatus: false
+        }];
+    // console.log("working")
+    for (let i = 0; i < library.length; i++) {
+        let data = library[i];
+        // console.log(data);
+        if (data.readingStatus == true) {
+            let statement = `I already read,  ${data.title}, ${data.author.toUpperCase()}`
+            console.log(statement);
+        } else {
+            let statement = `I need to read, ${data.title}, ${data.author.toUpperCase()}`;
+            console.log(statement);
+
+        }
+    }
+
+    let detail = {
+        "showData": function () {
+            // return `I am ${detail.name}, my age is ${detail.age}, and i am staying in ${detail.roomNo}`
+            return `I am ${detail.name}, my age is ${detail.age}, and i am staying in ${detail.city}`
+        }
+    };
+
+    let input = prompt("Enter your Good Name, Age, City");
+    let data = input.split(" ");
+    detail.name = data[0];
+    detail.age = data[1];
+    detail.city = data[2];
+    // detail.name = prompt("Enter your Good Name ..");
+    // detail.age = prompt("Enter your age ..");
+    // detail.roomNo = prompt("Eneter your Room No ..")
+    console.log(detail.showData());
+
+
+</script>
+
+</html>
